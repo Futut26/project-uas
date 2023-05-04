@@ -8,17 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>SBD</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
-<style>
-    .scroll{
-        height: 70vh;
-        overflow-y: scroll;
-    }
-</style>
+    <style>
+        .scroll {
+            height: 70vh;
+            overflow-y: scroll;
+        }
+    </style>
     <nav class="navbar navbar-expand-lg bg-body-secondary shadow-lg w-100 p-3 mb-5">
         <div class="container">
             <a class="navbar-brand" href="#" onclick="loadContent('../default.html')">
@@ -55,33 +56,41 @@
             </button>
         </div>
     </nav>
-<style>
-    .nav-pills {
-    --bs-nav-pills-border-radius: var(--bs-border-radius);
-    --bs-nav-pills-link-active-color: #fff;
-    --bs-nav-pills-link-active-bg: #7f7d7d;
-}
-</style>
+    <style>
+        .nav-pills {
+            --bs-nav-pills-border-radius: var(--bs-border-radius);
+            --bs-nav-pills-link-active-color: #fff;
+            --bs-nav-pills-link-active-bg: #7f7d7d;
+        }
+    </style>
     <div id="content" class="container">
         <div class="row ">
             <div class="col-4">
-                <nav id="navbar-example3" class="flex-column align-items-stretch pe-4 border-success border-end" style="height: 70vh;">
+                <nav id="navbar-example3" class="flex-column align-items-stretch pe-4 border-success border-end"
+                    style="height: 70vh;">
                     <nav class="nav nav-pills flex-column ">
-                        <h3 class="nav-heading pb-3 mb-3 border-bottom border-success ">Likungan dan Skema Basis Data (week 1-4)</h3>
-                        <div class="container-fluid border bg-body-tertiary rounded-3 border-success border-opacity-50 pt-3">
-                        <a class="nav-link   text-reset fw-medium active" href="#item-1">Learning Objective and Outcome</a>
-                        
-                        <nav class="nav nav-pills flex-column">
-                            <a class="nav-link text-reset fw-medium active ms-3 my-1" href="#item-1-1">Item 1-1</a>
-                            <a class="nav-link text-reset fw-medium active ms-3 my-1" href="#item-1-2">Item 1-2</a>
-                        </nav>
-                        <a class="nav-link text-reset fw-medium active " href="#item-2">Item 2</a>
-                        <a class="nav-link text-reset fw-medium active" href="#item-3">Item 3</a>
-                        <nav class="nav nav-pills flex-column">
-                            <a class="nav-link text-reset fw-medium active ms-3 my-1" href="#item-3-1">Item 3-1</a>
-                            <a class="nav-link text-reset fw-medium active ms-3 my-1" href="#item-3-2">Item 3-2</a>
-                        </nav>
-                    </div>
+                        <h3 class="nav-heading pb-3 mb-3 border-bottom border-success ">Likungan dan Skema Basis Data
+                            (week 1-4)</h3>
+                        <div
+                            class="container-fluid border bg-body-tertiary rounded-3 border-success border-opacity-50 pt-3">
+                            <a class="nav-link text-reset fw-medium active" href="#rps">Learning Objective and
+                                Outcome</a>
+                            <a class="nav-link text-reset fw-medium active " href="#video-lessons">SBD Video Lessons <i
+                                    class="bi bi-file-earmark-play-fill"></i></a>
+                            <a class="nav-link text-reset fw-medium active " href="#introduction">Introduction</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link text-reset fw-medium active ms-3 my-1  " href="#sistem-file">Sistem
+                                    File Tradisional</a>
+                                <a class="nav-link text-reset fw-medium active ms-3 my-1" href="#sistem-database">Sistem
+                                    Data Base</a>
+                            </nav>
+                            <a class="nav-link text-reset fw-medium active " href="#item-2">Item 2</a>
+                            <a class="nav-link text-reset fw-medium active" href="#item-3">Item 3</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link text-reset fw-medium active ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                                <a class="nav-link text-reset fw-medium active ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                            </nav>
+                        </div>
                     </nav>
                 </nav>
             </div>
@@ -90,55 +99,171 @@
                 <div class="container pb-5 ">
                     <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
                         class="scrollspy-example-2 scroll p-4" tabindex="0">
-                        <div id="item-1">
-                            <h4>Learning Objective and Outcome</h4>
-                            <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the
-                                page, the appropriate navigation link is highlighted. It's repeated throughout the
-                                component example. We keep adding some more example copy here to emphasize the scrolling
-                                and highlighting.
+                        <div id="rps">
+                            <h4 class="pb-3">Learning Objective and Outcome</h4>
+                            <p class="fw-bold fs-5">Learning Objective</p>
+                            <p>Pada pertemuan ini, mahasiswa akan belajar :</p>
+                            <ul>
+                                <li>Mengenal tentang sistem basis data</li>
+                                <li>Mengenal sistem file tradisional</li>
+                                <li>Mengenal sistem file basis data</li>
+                                <li>Mengenal Komponen basis data</li>
+                                <li>Konsep Data Model</li>
+                                <li>Relational Model</li>
+                                <li>Skema Basis Data</li>
+                                <li>Environment database server (MYSQL)</li>
+                            </ul>
 
-                                Keep in mind that the JavaScript plugin tries to pick the right element among all that
-                                may be visible. Multiple visible scrollspy targets at the same time may cause some
-                                issues.</p>
+                            <p class="fw-bold fs-5">Learning Outcome</p>
+                            <p>Setelah menyelesaikan materi, mahasiswa bisa :</p>
+                            <ul>
+                                <li>Memahami dan menjelaskan tentang system basis data dan perbedaanya dari sistem file
+                                    tradisional</li>
+                                <li>Memahami dan mejelaskan tentang lingkungan basis data</li>
+                                <li>Memahami dan menjelaskan skema basis data</li>
+                                <li>Memahami cara membuat skema basis data</li>
+                                <li>Membuat skema basis data dengan instruksi DDL - SQL</li>
+                            </ul>
                         </div>
-                        <div id="item-1-1">
-                            <h5>Item 1-1</h5>
-                            <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the
-                                page, the appropriate navigation link is highlighted. It's repeated throughout the
-                                component example. We keep adding some more example copy here to emphasize the scrolling
-                                and highlighting.
 
-                                Keep in mind that the JavaScript plugin tries to pick the right element among all that
-                                may be visible. Multiple visible scrollspy targets at the same time may cause some
-                                issues.
-                                This is some placeholder content for the scrollspy page. Note that as you scroll down
-                                the page, the appropriate navigation link is highlighted. It's repeated throughout the
-                                component example. We keep adding some more example copy here to emphasize the scrolling
-                                and highlighting.
-
-                                Keep in mind that the JavaScript plugin tries to pick the right element among all that
-                                may be visible. Multiple visible scrollspy targets at the same time may cause some
-                                issues.</p>
+                        <div class="mt-5 mb-5 w-100" id="video-lessons">
+                            <h4 class="mb-3">System Basis Data Video Lessons</h4>
+                            <div class="embed-responsive embed-responsive-1by1">
+                                <iframe width="750" height="400" class="embed-responsive-item "
+                                    src="https://www.youtube.com/embed/FR4QIeZaPeM"></iframe>
+                            </div>
                         </div>
-                        <div id="item-1-2">
-                            <h5>Item 1-2</h5>
-                            <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the
-                                page, the appropriate navigation link is highlighted. It's repeated throughout the
-                                component example. We keep adding some more example copy here to emphasize the scrolling
-                                and highlighting.
 
-                                Keep in mind that the JavaScript plugin tries to pick the right element among all that
-                                may be visible. Multiple visible scrollspy targets at the same time may cause some
-                                issues.
-                                This is some placeholder content for the scrollspy page. Note that as you scroll down
-                                the page, the appropriate navigation link is highlighted. It's repeated throughout the
-                                component example. We keep adding some more example copy here to emphasize the scrolling
-                                and highlighting.
-
-                                Keep in mind that the JavaScript plugin tries to pick the right element among all that
-                                may be visible. Multiple visible scrollspy targets at the same time may cause some
-                                issues.</p>
+                        <div id="introduction">
+                            <h4 class="mb-3">Introduction</h4>
                         </div>
+
+                        <div id="sistem-file">
+                            <p class="fw-bold fs-5">Sistem File Tradisional</p>
+                            <p>File tradisional adalah file yang dimana setiap user mendefinisikan dan
+                                mengimplementasikan file yang dibutuhkan untuk aplikasi khusus sebagai bagian dari
+                                pemrograman aplikasinya.</p>
+                            <ul>
+                                <li>Dikembangkan pada era tahun 60 an</li>
+                                <li>Digunakan untuk mendukung aplikasi back office</li>
+                                <li>Terdiri dari sekumpulan file yang menampung data master dan data transaksi</li>
+                                <li>Untuk menghasilkan laporan yang dibutuhkan</li>
+                                <li>untuk mengelola bisnis, dilakukan kombinasi data
+                                    antara data transaksi dari file transaksi dan data
+                                    master dari file master.</li>
+                            </ul>
+
+                            <div class="d-flex justify-content-center m-4">
+                                <img width="70%" class="border border-success m-3 shadow-lg"
+                                    src="http://2.bp.blogspot.com/-jbIom_HYp4U/UHhXiMexbtI/AAAAAAAAAFM/pmvCDJdE2TM/s1600/file+mahasiswa.bmp"
+                                    alt="">
+                            </div>
+
+                            <p>Dalam aplikasi back office,
+                                setiap file bekerja dengan
+                                program aplikasi yang
+                                mengkoordinasikan
+                                pengolahan dua atau lebih file.</p>
+
+                            <p>Proses penggabungan dari file‐file teks tersebut tidaklah
+                                mudah, sehingga sangat rentan terjadinya redundant data
+                                (data berlebihan)</p>
+                            <p>Hal ini merupakan salah satu kelemahan sistem file tradisional.</p>
+                            </ul>
+
+                            <p>Redundansi data merupakan hal yang tidak baik. Salah satu
+                                contoh yang sering digunakan untuk menggambarkan
+                                kelemahan ini adalah masalah update record.</p>
+
+                            <ul>
+                                <li><span class="fw-bold fs-5">Contoh:</span><br>
+                                    <p>Jika saya punya dua file yang keduanya mengandung informasi alamat pelanggan
+                                        dan saya mengubah salah satu file tapi lupa untuk mengubah lain, file saya
+                                        sekarang berbeda dan saya punya masalah.
+                                        Jika file yang tidak berubah datanya adalah file penagihan, faktur pelanggan
+                                        saya
+                                        tentunya akan salah alamat.
+                                        Jika saya menggunakan alamat ini untuk pengiriman, pelanggan juga tidak
+                                        mendapatkan pesanan mereka. Sebuah situasi yang sangat buruk bagi bisnis.
+                                    </p>
+                                </li>
+                            </ul>
+
+                            <p class="fw-bold fs-5">Kerugian dengan Sistem File Tradisional:</p>
+                            <ol>
+                                <li>Data redundancy and inconsistency.</li>
+                                <li>Difficulty in accessing data</li>
+                                <li>Data isolation.</li>
+                                <li>Integrity problems.</li>
+                                <li>Atomicity problems.</li>
+                                <li>Concurrent‐access anomalies</li>
+                                <li>Security problems</li>
+                            </ol>
+                        </div>
+
+
+                        <div id="sistem-database">
+                            <h4>Sistem Database</h4>
+                            <p><span class="fw-bold fs-6">Database:</span> sekumpulan data yang terkait /
+                                terelasi.
+                            </p>
+                            <p><span class="fw-bold fs-6">Data:</span> fakta yang diketahui yang dapat dicatat
+                                dan yang memiliki makna implisit.</p>
+                            <p class="fw-bold fs-6">Sebuah database memiliki sifat implisit berikut:</p>
+                            <ul>
+                                <li>Sebuah database mewakili beberapa aspek dari
+                                    dunia nyata, kadang‐kadang disebut miniworld
+                                    atau Universe of Discourse (UoD)</li>
+                                <li>Database adalah kumpulan data yang logis
+                                    koheren (kepaduan yang baik) dengan beberapa
+                                    makna yang melekat.</li>
+                                <li>Sebuah database dirancang, dibangun, dan diisi
+                                    dengan data untuk tujuan tertentu.</li>
+                            </ul>
+
+                            <div class="d-flex justify-content-center m-4">
+                                <img width="70%" class="border border-success m-3 shadow-lg"
+                                    src="../images/Database-Enviroment.png" alt="dd">
+                            </div>
+
+                            <p class="fw-bold fs-5">Contoh aplikasi yang menggunakan database: </p>
+                            <ul>
+                                <li>Banking: customer information, accounts, loans, and banking transactions.</li>
+                                <li>Airlines: reservations and schedule information.</li>
+                                <li>Universities: student information/ course registrations, and grades.</li>
+                                <li>Telecommunication: Keeping records of calls made, generating monthly bills,
+                                    maintaining balances on prepaid calling cards, and storing information about the
+                                    communication networks.</li>
+                                <li>Finance: storing information about holdings, sales, and purchases of financial
+                                    instruments such as stocks and bonds; also for storing real‐time market data to
+                                    enable on‐line trading by customers and automated trading by the firm.</li>
+                                <li>Sales: customer, product, and purchase information.</li>
+                                <li>On‐line retailers: sales data noted above plus on‐line order tracking/ generation of
+                                    recommendation lists, and maintenance of on‐line product evaluations.</li>
+                                <li>Manufacturing: management of the supply chain and for tracking production of items
+                                    in factories, inventories of items in warehouses and stores, and orders for items.
+                                </li>
+                                <li>Human resources: information about employees, salaries, payroll taxes, benefits, and
+                                    for generation of paychecks.</li>
+                                <li>Many more…</li>
+                            </ul>
+
+                            <p class="fw-bold fs-5">Sistem File Tradisional vs
+                                Sistem Database</p>
+                            <ul>
+                                <li>Pada tradisional file processing, struktur dari file data‐nya embedded (berada dalam
+                                    program), jadi jika terjadi perubahan struktur data maka harus merubah semua program
+                                    yg menggunakan file data ini..(not program‐data independence)</li>
+                                <li>Struktur filde data disimpan dalam catalog DBMS, terpisah dari program pengaksesnya.
+                                    (program‐data independence)</li>
+                                <li>Karakteristik yang memungkinkan terjadinya program‐ data independence dan
+                                    program‐operation independence disebut data abstraction</li>
+                            </ul>
+
+
+                        </div>
+
+
                         <div id="item-2">
                             <h4>Item 2</h4>
                             <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the
